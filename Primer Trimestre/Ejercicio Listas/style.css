@@ -1,0 +1,8 @@
+#lista1{
+    list-style-position:inside;
+    margin-left: 20px;
+    list-style-type: circle;
+}
+#lista2{
+    list-style-image: url("./España.gif");
+}
