@@ -1,0 +1,35 @@
+.u {
+  text-decoration: underline;
+}
+.i {
+  font-style: italic;
+}
+.b {
+  font-weight: bold;
+}
+.s {
+  text-decoration: line-through;
+}
+.blockquote {
+  border-left: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+.center {
+  text-align: center;
+}
+.cite {
+  font-style: italic;
+}
+.sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+.sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+.code {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
