@@ -7,12 +7,14 @@ div {
 }
 .españa {
   background-image: linear-gradient(
-    red 33%,
-    yellow 33%,
-    yellow 66.66%,
-    red 66.66%
+    red 23%,
+    yellow 20%,
+    yellow 78.66%,
+    red 30%
+  
   );
 }
+
 
 .italia {
   background-image: linear-gradient(
