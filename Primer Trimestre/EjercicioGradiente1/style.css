@@ -1,0 +1,52 @@
+div {
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+  display: inline-block;
+  border: 1px solid #000;
+}
+.españa {
+  background-image: linear-gradient(
+    red 33%,
+    yellow 33%,
+    yellow 66.66%,
+    red 66.66%
+  );
+}
+
+.italia {
+  background-image: linear-gradient(
+    to right,
+    red 33%,
+    white 33%,
+    white 66.6%,
+    green 66.6%
+  );
+}
+
+.colombia {
+  background-image: linear-gradient(
+    to bottom,
+    yellow 33%,
+    blue 33%,
+    blue 66.6%,
+    red 66.6%
+  );
+}
+.alemania {
+  background-image: linear-gradient(
+    to bottom,
+    black 33%,
+    red 33%,
+    red 66.6%,
+    yellow 66.6%
+  );
+  color: white;
+}
+.japon {
+  background-image: radial-gradient(circle, red 33%, white 33%, white);
+}
+
+.polonia {
+  background-image: linear-gradient(white 50%, red 50%, red);
+}
