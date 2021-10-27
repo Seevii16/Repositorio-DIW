@@ -1,0 +1,38 @@
+h1{
+    border: 2px solid #00F;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+h2{
+    border: 2px solid #AAA;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 5px;
+}
+
+.datos{
+    border: 2px solid #0F0;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.datos li {
+    margin: 15px;
+}
+p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.contenido{
+    border : 2px dashed #0F0;
+    margin-left: 10px;
+    margin-right: 10px;
+}

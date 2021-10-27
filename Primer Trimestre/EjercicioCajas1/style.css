@@ -5,8 +5,7 @@ h2{
     border: 2px solid #AAA;
 }
 .datos{
-    border-top: 4px dotted #F00;
-    border-bottom: 4px dotted #F00;
+    border:  4px dotted #F00;
 }
 .contenido{
     border : 2px dashed #0F0;
