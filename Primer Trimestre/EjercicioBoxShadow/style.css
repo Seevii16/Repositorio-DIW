@@ -1,0 +1,57 @@
+div {
+  width: 282px;
+  height: 136px;
+  margin: 24px;
+  display: inline-block;
+
+  background-color: #ccc;
+}
+.A {
+  padding: 10px;
+  box-shadow: -2px -2px #000;
+}
+.B {
+  padding: 10px;
+  box-shadow: -2px -2px 5px #000;
+}
+.C {
+  padding: 10px;
+  box-shadow: -2px -2px 0 2px #000;
+}
+.D {
+  padding: 10px;
+  box-shadow: -2px -2px 5px 2px #000;
+}
+.E {
+  padding: 10px;
+  box-shadow: 0px 0px 5px 0px #000;
+}
+.F {
+  padding: 10px;
+  box-shadow: 0px 0px 1px 1px #000;
+}
+
+.G {
+  padding: 10px;
+  box-shadow: 2px 2px #000;
+}
+.H {
+  padding: 10px;
+  box-shadow: 2px 2px 5px #000;
+}
+.I {
+  padding: 10px;
+  box-shadow: 2px 2px 0 2px #000;
+}
+.J {
+  padding: 10px;
+  box-shadow: 2px 2px 5px 2px #000;
+}
+.K {
+  padding: 10px;
+  box-shadow: 0px 0px 5px 0px #000;
+}
+.L {
+  padding: 10px;
+  box-shadow: 0px 0px 1px 1px #000;
+}
