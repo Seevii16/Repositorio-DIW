@@ -1,0 +1,22 @@
+body {
+    width: 60em;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+}
+.datosLibro,.descLibro{
+    float: left;
+    
+}
+.datosLibro{
+    width: 16em;
+}
+.descLibro{
+    width: 44em;
+}
+.texto li{
+    float: left;
+    width: 33%;
+    list-style: none;
+}
