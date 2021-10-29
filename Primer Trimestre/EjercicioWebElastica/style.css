@@ -7,6 +7,8 @@ h1{
 }
 .datosLibro,.descLibro{
     float: left;
+    margin: 0;
+    padding: 0;
     
 }
 .datosLibro{
@@ -18,5 +20,9 @@ h1{
 .texto li{
     float: left;
     width: 33%;
+    
+}
+.texto{
     list-style: none;
+    padding: 0;
 }
