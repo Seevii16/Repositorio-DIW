@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>EjercicioFormulario2</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>iDESWEB</h1>
+    <h2>Formulario de registro</h2>
+
+    <form action="" method="post">
+      <h3>¿Quién eres?</h3>
+
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" id="nombre" />
+      <label for="apellidos">Apellidos</label>
+      <input type="text" name="apellidos" id="apellidos" />
+
+      <label for="nombre">Correo electrónico</label>
+      <input type="text" name="correo" id="correo" />
+
+      <label for="dia">Fecha de nacimiento</label>
+      <select name="dia" id="dia">
+        <option>Día</option>
+      </select>
+
+      <select name="mes" id="mes">
+        <option>Mes</option>
+      </select>
+
+      <select name="anyo" id="anyo">
+        <option>Año</option>
+      </select>
+
+      <h3>¿De dónde eres?</h3>
+
+      <label for="ciudad">Ciudad</label>
+      <input type="text" name="ciudad" id="ciudad" />
+
+      <label for="cp">Código postal</label>
+      <input type="text" name="cp" id="cp" />
+
+      <label for="pais">País</label>
+      <select name="pais" id="pais">
+        <option>País</option>
+      </select>
+
+      <h3>¿Cómo quieres iniciar sesión?</h3>
+
+      <label for="nombre">Nombre de usuario</label>
+      <input type="text" name="nombre" id="nombre" />
+
+      <label for="contraseña">Contraseña</label>
+      <input type="password" name="contraseña" id="contraseña" />
+
+      <label for="repContraseña">Vuelve a escribir la contraseña</label>
+      <input type="password" name="repContraseña" id="repContraseña" />
+
+      <h3>Condiciones de registro</h3>
+
+      <label>Deseo recibir ofertas de iDESWEB</label>
+      <input type="radio" name="oferta" id="oferta1" value="1" />
+      <label for="oferta1" class="inline">Una vez al día</label>
+      <input type="radio" name="oferta" id="oferta2" value="2" />
+      <label for="oferta2" class="inline">Una vez a la semana</label>
+      <input type="radio" name="oferta" id="oferta3" value="3" />
+      <label for="oferta3" class="inline">Una vez al mes</label>
+
+      <input type="checkbox" name="aceptar" id="aceptar" />
+      <label for="aceptar"
+        >Acepto el acuerdo de servicios, la declaración de privacidad y la
+        declaración de uso de cookies</label
+      >
+
+      <input type="submit" value="Crear cuenta" id="boton-crear" />
+    </form>
+  </body>
+</html>
