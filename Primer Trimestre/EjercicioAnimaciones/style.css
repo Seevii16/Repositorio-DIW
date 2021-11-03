@@ -1,0 +1,149 @@
+.animacion1 {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    animation-name: animacion1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes animacion1 {
+    0%   {background-color:yellow; left:0px; top:0px;}
+    25%  {background-color:rgb(255, 217, 0); left:100px; top:0px;}
+    50%  {background-color:rgb(255, 187, 0); left:100px; top:0px;}
+    75%  {background-color:rgb(250, 162, 0); left:100px; top:0px;}
+    100% {background-color:rgb(255, 145, 0); left:0px; top:0px;}
+  }
+
+.animacion2{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    animation-name: animacion2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes animacion2 {
+    0%   {background-color:yellow; left:0px; top:0px;}
+    25%  {background-color:rgb(255, 217, 0); left:100px; top:0px;}
+    50%  {background-color:rgb(255, 187, 0); left:100px; top:0px;}
+    75%  {background-color:rgb(250, 162, 0); left:100px; top:0px;}
+    100% {background-color:rgb(255, 145, 0); left:0px; top:0px;}
+  }
+  .animacion2B{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    animation-name: animacion2B;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+   
+}
+@keyframes animacion2B {
+    0%   {background-color:yellow; left:0px; top:0px;}
+    25%  {background-color:rgb(255, 217, 0); left:100px; top:0px;}
+    50%  {background-color:rgb(255, 187, 0); left:100px; top:0px;}
+    75%  {background-color:rgb(250, 162, 0); left:100px; top:0px;}
+    100% {background-color:rgb(255, 145, 0); left:0px; top:0px;}
+    75% {transform: rotate(180deg);}
+    
+  }
+  .animacion3{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    animation-name: animacion3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.animacion3B{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    animation-name: animacion3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.animacion3C{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    animation-name: animacion3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.animacion4{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    animation-name: animacion4;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    
+}
+
+#A1{
+    color:black;
+    animation-name: animacion5;
+    animation-duration: 0.1s;
+    animation-iteration-count: infinite;
+    
+}
+#A2{
+    color:black;  
+}
+#A2:hover{
+    color:black;
+    animation-name: animacion5;
+    animation-duration: 0.1s;
+    animation-iteration-count: infinite;
+    
+}
+
+button{
+    border: none;
+    background-color: white;
+}
+button:hover{
+    background-color:red;
+    animation-name: animacion6;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacion5 {
+    from {color: red;}
+    to {color: blue;}
+    
+}
+@keyframes animacion6 {
+    0%   {background-color:rgb(255, 0, 0); left:0px; top:0px;}
+    25%  {background-color:rgb(0, 183, 255); left:100px; top:0px;}
+    50%  {background-color:rgb(255, 0, 0); left:100px; top:100px;}
+    75%  {background-color:rgb(0, 183, 255); left:100px; top:100px;}
+    100% {background-color:rgb(255, 0, 0); left:0px; top:0px;}
+    
+}
+@keyframes animacion4 {
+    
+    70% {transform: rotate(190deg);}
+  }
+  
+  @keyframes animacion3 {
+      0%   {background-color:yellow; left:0px; top:0px;}
+      25%  {background-color:rgb(255, 217, 0); left:100px; top:0px;}
+      50%  {background-color:rgb(255, 187, 0); left:100px; top:100px;}
+      75%  {background-color:rgb(250, 162, 0); left:100px; top:100px;}
+      100% {background-color:rgb(255, 145, 0); left:0px; top:0px;}
+      70% {transform: rotate(190deg);}
+    }
