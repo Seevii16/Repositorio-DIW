@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    body {
+        background-image: url('../img/pattern.png');
+    }
+    #banner{
+        background-image: url('../img/bakbaner.png');
+    }
+    @font-face {
+        font-family: "BebasNeue";
+        src: url('../css/fonts/BebasNeue.otf');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: "WebSymbolsRegular";
+        src: url('../css/fonts/websymbols-regular-webfont.woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    .bebasneue {
+        font-family: "BebasNeue";
+    }
+    .WebSymbolsRegular {
+        font-family: "WebSymbolsRegular";
+    }
+}
+
+@layer components {
+    .lista {
+        @apply mt-3 pr-10 hover:text-azul-claro hover:scale-125 transform duration-100
+    }
+    .card{
+        @apply float-left w-52 h-80 bg-white overflow-hidden m-7 mt-10 cursor-pointer shadow-md
+    }
+
+}
