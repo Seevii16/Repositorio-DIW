@@ -3,7 +3,10 @@
 @tailwind utilities;
 @layer base {
     body {
+        
         background-image: url('../img/pattern.png');
+        margin: 0;
+        padding: 0;
     }
     #banner{
         background-image: url('../img/bakbaner.png');
@@ -29,11 +32,82 @@
 }
 
 @layer components {
-    .lista {
-        @apply mt-3 pr-10 hover:text-azul-claro hover:scale-125 transform duration-100
+    .lista ul li a {
+        @apply  block hover:text-azul-claro hover:scale-125 transform duration-100
     }
     .card{
         @apply float-left w-52 h-80 bg-white overflow-hidden m-7 mt-10 cursor-pointer shadow-md
     }
+    .logo{
+        @apply block float-left text-3xl mt-2 ml-5 
+    }
+    .logoText h3{
+        @apply block float-right text-4xl m-1.5 mr-16
+    }
+    .menu ul li{
+        @apply inline-block tracking-wide leading-loose mt-0 mr-5 mb-0 ml-5
+    }
+    
+.logo {
+        @apply  tracking-wide cursor-pointer
+                    overflow-hidden transition-all hover:text-black hover:bg-white
+                    ;
+    }
 
+    .logo span {
+        /* logo gear */
+        @apply m-0 p-0
+        block 
+        float-left
+        text-3xl 
+        mt-1.5 
+        ml-6 
+        text-center 
+        WebSymbolsRegular;
+        animation: rotate-gear 2000ms infinite linear;
+        letter-spacing: 0px;
+    }
+
+    .logo:hover span {
+        /* logo gear */
+        animation: fromBellow 500ms linear;
+    }
+    .logo h3 {
+        /* logo text */
+        @apply block float-right text-4xl mr-16 mt-1;
+    }
+
+    .logo:hover h3 {
+        animation: fromRight 300ms linear;
+    }
+
+    @keyframes fromRight {
+        from {
+            transform: translateX(200%);
+        }
+        to {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes rotate-gear {
+        from {
+            transform: rotateZ(0deg);
+        }
+        to {
+            transform: rotateZ(360deg);
+        }
+    }
+
+    @keyframes fromBellow {
+        0% {
+            transform: translateY(0%);
+        }
+        50% {
+            transform: translateY(200%);
+        }
+        100% {
+            transform: translateY(0%);
+        }
+    }
 }
