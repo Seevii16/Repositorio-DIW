@@ -12,6 +12,21 @@
         background-image: url('../img/bakbaner.png');
         background-position: -200px -200px;
     }
+    .search{
+        border: #ccc;
+        box-shadow: 1px 1px 4px #ccc inset;
+    }
+    .texto{
+        background-color:transparent;
+        color: #ccc;
+    }
+    .lateral input[type="text"]:focus{
+        color: #555;
+    }
+    .lateral h3 {
+        background-image: url('../img/pxgray.png');
+        box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f;
+    }
     @font-face {
         font-family: "TrebuchetMS";
         src: url('../css/fonts/TrebuchetMS.ttf');
@@ -135,7 +150,21 @@
        @apply text-7xl text-azul-claro;
         animation: showIcon 300ms linear;
     }
-
+    .lateral{
+        @apply w-72 min-h-full float-right TrebuchetMS m-5 
+    }
+    .lateral h3{
+        @apply block w-auto h-11 leading-loose text-3xl bebasneue  tracking-wide pl-3.5 mt-7 mb-3.5
+    }
+    .texto{
+        @apply w-10/12 h-7 border-none transition-all pl-1 rounded-sm;
+    }
+    .boton{
+        @apply WebSymbolsRegular
+    }
+    .search{
+        @apply w-11/12 h-8 bg-white mt-2.5 rounded-md border-solid 
+    }
     @keyframes backBanner {
         0%{
             background-position: 0px 0px;
