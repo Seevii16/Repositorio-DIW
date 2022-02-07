@@ -8,8 +8,15 @@
         margin: 0;
         padding: 0;
     }
-    #banner{
+    .banner{
         background-image: url('../img/bakbaner.png');
+        background-position: -200px -200px;
+    }
+    @font-face {
+        font-family: "TrebuchetMS";
+        src: url('../css/fonts/TrebuchetMS.ttf');
+        font-weight: normal;
+        font-style: normal;
     }
     @font-face {
         font-family: "BebasNeue";
@@ -29,6 +36,9 @@
     .WebSymbolsRegular {
         font-family: "WebSymbolsRegular";
     }
+    .TrebuchetMS{
+        font-family: "TrebuchetMS"
+    }
 }
 
 @layer components {
@@ -36,8 +46,15 @@
         @apply  block hover:text-azul-claro hover:scale-125 transform duration-100
     }
     .card{
-        @apply float-left w-52 h-80 bg-white overflow-hidden m-7 mt-10 cursor-pointer shadow-md
+        @apply float-left  transition-all w-52 h-80 bg-white overflow-hidden ml-14 mt-10 cursor-pointer text-center text-azul-oscuro hover:bg-black shadow-md 
     }
+    .card .icon{
+        @apply block transition-all text-black w-full h-32 text-5xl leading-10 text-center mt-10 m-0 WebSymbolsRegular;
+    }
+    .card h2{
+        @apply w-full h-12 transition-all TrebuchetMS text-xl text-center text-azul-oscuro font-bold ;
+    }
+    
     .logo{
         @apply block float-left text-3xl mt-2 ml-5 
     }
@@ -48,7 +65,7 @@
         @apply inline-block tracking-wide leading-loose mt-0 mr-5 mb-0 ml-5
     }
     
-.logo {
+    .logo {
         @apply  tracking-wide cursor-pointer
                     overflow-hidden transition-all hover:text-black hover:bg-white
                     ;
@@ -69,18 +86,86 @@
     }
 
     .logo:hover span {
-        /* logo gear */
+       
         animation: fromBellow 500ms linear;
     }
     .logo h3 {
-        /* logo text */
+      
+        
         @apply block float-right text-4xl mr-16 mt-1;
     }
 
     .logo:hover h3 {
         animation: fromRight 300ms linear;
     }
+    .banner{
+        @apply  w-11/12 
+        h-28
+        border-solid
+        border-8
+      border-white
+        shadow-md
+        ml-14
+        m-5 
+        bebasneue 
+      text-white
+        text-4xl
+        overflow-hidden
+        ;
+        animation: backBanner 10s linear; 
+    }
+    .banner h1{
+        @apply block
+        w-7/12
+        text-5xl
+        m-6
+        ml-28; 
+        animation: showText 10s linear;
+    }
+    .card:hover .category{
+        @apply text-white;
+        animation: showCategory 400ms linear;
+    }
+    
+    .card:hover .description{
+        @apply text-white;
+        animation: showDescription 400ms linear;
+    }
+    .card:hover .icon{
+       @apply text-7xl text-azul-claro;
+        animation: showIcon 300ms linear;
+    }
 
+    @keyframes backBanner {
+        0%{
+            background-position: 0px 0px;
+        }
+        100%{
+            background-position: -200px -200px;
+        }
+    }
+    @keyframes showText {
+        0%{
+            transform: translateX(-600%) scale(5,5);
+            opacity: 1;
+        }
+        50%{
+            transform: translateX(600%) scale(5,5);
+            opacity: 1;
+        }
+        75%{
+            transform: translateX(-600%) scale(5,5);
+            text-shadow: none;
+            color: transparent;
+            opacity: 0;
+        }
+        100%{
+            transform: translateX(0%) scale(1, 1);
+            text-shadow: 2px 2px 1px black;
+            color: white;
+            opacity: 1;
+        }
+    }
     @keyframes fromRight {
         from {
             transform: translateX(200%);
@@ -110,4 +195,33 @@
             transform: translateY(0%);
         }
     }
+    @keyframes showIcon{
+        from{
+            transform: translateY(-200%);
+        }
+        to{
+            transform: translateY(0%);
+        }
+    }
+    @keyframes showDescription{
+        from{
+            transform: translateX(-300%);
+            color: black;
+        }
+        to{
+            transform: translateX(0%);
+        }
+    }
+    
+@keyframes showCategory{
+    from{
+        transform: translateY(-300%);
+        color:black;
+    }
+    to{
+        transfrom: translateY(0%);
+        color: white;
+    }
+}
+
 }
