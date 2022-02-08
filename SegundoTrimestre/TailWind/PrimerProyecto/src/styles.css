@@ -27,6 +27,22 @@
         background-image: url('../img/pxgray.png');
         box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f;
     }
+    .aside-box{
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.3), 0px 1px white inset, 0px -3px 2px rgba(0, 0, 0, 0.3) inset;
+    }
+    .boton{
+        border:none;
+        border-left: 1px solid #ccc;
+        color: #555;
+    }
+    .inputLogin{
+        color: gray;
+        box-shadow: 1px 1px 1px #ccc inset;
+    }
+    .loginBoton{
+        background: linear-gradient(to bottom, #3eb8e5 0%, #2ca0ca 100%);
+        border: 1px solid #156785;
+    }
     @font-face {
         font-family: "TrebuchetMS";
         src: url('../css/fonts/TrebuchetMS.ttf');
@@ -159,11 +175,23 @@
     .texto{
         @apply w-10/12 h-7 border-none transition-all pl-1 rounded-sm;
     }
-    .boton{
-        @apply WebSymbolsRegular
+    .aside-box{
+        @apply  w-10/12 m-0 bg-white h-60 mt-5 pt-0.5 
     }
     .search{
         @apply w-11/12 h-8 bg-white mt-2.5 rounded-md border-solid 
+    }
+    .boton{
+        @apply h-7 cursor-pointer text-base bg-transparent pl-1
+    }
+    .inputLogin{
+        @apply block m-0 mt-5 w-4/5 h-7 border-solid border rounded-md pl-7 
+    }
+    .login{
+        @apply block text-center absolute ml-3.5 mt-1.5 h-7
+    }
+    .loginBoton{
+        @apply text-center text-white cursor-pointer TrebuchetMS transition-all text-sm rounded-none font-light w-24 h-8 mt-5 ml-4 mb-5
     }
     @keyframes backBanner {
         0%{
