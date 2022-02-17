@@ -4,14 +4,33 @@
 @layer base {
     body {
         
-        background-image: url('../img/pattern.png');
+        background-image: url('../img/fondo.jpg');
         margin: 0;
         padding: 0;
     }
     .banner{
-        background-image: url('../img/bakbaner.png');
-        background-position: -200px -200px;
+        background-image: url('../img/cine.jpg');
+        background-repeat: no-repeat;
+        background-position: -300px -300px;
+        
+      
     }
+    .uncharted{
+        background-image: url('../img/uncharted.jpg'); 
+    }
+    .scream{
+        background-image: url('../img/scream.png'); 
+    }
+    .spiderman{
+        background-image: url('../img/spiderman.png'); 
+    }
+    .clifford{
+        background-image: url('../img/cliffordjr.jpg'); 
+    }
+    #myDiv {
+      
+        text-align: center;
+      }
     .search{
         border: #ccc;
         box-shadow: 1px 1px 4px #ccc inset;
@@ -20,43 +39,22 @@
         background-color:transparent;
         color: #ccc;
     }
-    .lateral input[type="text"]:focus{
-        color: #555;
-    }
-    .lateral h3 {
-        background-image: url('../img/pxgray.png');
-        box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f;
-    }
-    .
-    .aside-box{
-        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.3), 0px 1px white inset, 0px -3px 2px rgba(0, 0, 0, 0.3) inset;
-    }
+   
+  
     .boton{
         border:none;
         border-left: 1px solid #ccc;
-        color: #555;
+        color: #D12D0F;
     }
     .inputLogin{
         color: gray;
         box-shadow: 1px 1px 1px #ccc inset;
     }
     .loginBoton{
-        background: linear-gradient(to bottom, #3eb8e5 0%, #2ca0ca 100%);
+        background: linear-gradient(to bottom, #D12D0F 0%, #D12D0F 100%);
         border: 1px solid #156785;
     }
-    .overlay{
-        text-shadow: 0px 0px 1px #ccc;
-        border: 3px solid white;
-        box-shadow: 0px 0px 4px #ccc;
-        transform: translateX(-80%);
-        opacity: 0;
-        margin-top: -52px;
-        
-    }
-    .mostrar:hover .overlay {
-        opacity: 1;
-        transform: translateX(0%);
-    }
+
     @font-face {
         font-family: "TrebuchetMS";
         src: url('../css/fonts/TrebuchetMS.ttf');
@@ -87,18 +85,11 @@
 }
 
 @layer components {
+    /* Componente lista*/
     .lista ul li a {
-        @apply  block hover:text-azul-claro hover:scale-125 transform duration-100
+        @apply  block hover:text-white hover:scale-125 transform duration-100
     }
-    .card{
-        @apply float-left  transition-all w-52 h-80 bg-white overflow-hidden ml-14 mt-10 cursor-pointer text-center text-azul-oscuro hover:bg-black shadow-md 
-    }
-    .card .icon{
-        @apply block transition-all text-black w-full h-32 text-5xl leading-10 text-center mt-10 m-0 WebSymbolsRegular;
-    }
-    .card h2{
-        @apply w-full h-12 transition-all TrebuchetMS text-xl text-center text-azul-oscuro font-bold ;
-    }
+    /* Componente Logo*/
     
     .logo{
         @apply block float-left text-3xl mt-2 ml-5 
@@ -106,16 +97,14 @@
     .logoText h3{
         @apply block float-right text-4xl m-1.5 mr-16
     }
-    .menu ul li{
-        @apply inline-block tracking-wide leading-loose mt-0 mr-5 mb-0 ml-5
-    }
+
     
     .logo {
         @apply  tracking-wide cursor-pointer
-                    overflow-hidden transition-all hover:text-black hover:bg-white
-                    ;
+        overflow-hidden transition-all hover:text-black hover:bg-white
+        ;
     }
-
+    
     .logo span {
         /* logo gear */
         @apply m-0 p-0
@@ -126,38 +115,39 @@
         ml-6 
         text-center 
         WebSymbolsRegular;
-        animation: rotate-gear 2000ms infinite linear;
+        
         letter-spacing: 0px;
     }
-
+    
     .logo:hover span {
-       
+        
         animation: fromBellow 500ms linear;
     }
     .logo h3 {
-      
+        
         
         @apply block float-right text-4xl mr-16 mt-1;
     }
-
+    
     .logo:hover h3 {
         animation: fromRight 300ms linear;
     }
+    /* Componente Banner*/
     .banner{
         @apply  w-11/12 
-        h-28
+        h-32
         border-solid
         border-8
-      border-white
+        border-naranja
         shadow-md
         ml-14
         m-5 
         bebasneue 
-      text-white
+        text-white
         text-4xl
         overflow-hidden
         ;
-        animation: backBanner 10s linear; 
+        
     }
     .banner h1{
         @apply block
@@ -165,39 +155,56 @@
         text-5xl
         m-6
         ml-28; 
-        animation: showText 10s linear;
+        
+        animation: showText 3s linear;
     }
+    .menu ul li{
+        @apply inline-block tracking-wide leading-loose mt-0 mr-5 mb-0 ml-5
+    }
+    /* Componente Carta*/
+   .card{
+       @apply float-left  transition-all w-52 h-80 bg-naranja overflow-hidden ml-14 mt-10 cursor-pointer text-center text-white hover:bg-white shadow-md 
+   }
+   .card .icon{
+       @apply block transition-all text-white w-full h-32 text-5xl leading-10 text-center mt-10 m-0 WebSymbolsRegular;
+   }
+   .card h2{
+       @apply w-full h-12 transition-all TrebuchetMS text-xl text-center text-white font-bold ;
+   }
     .card:hover .category{
-        @apply text-white;
+        @apply text-black;
         animation: showCategory 400ms linear;
     }
     
     .card:hover .description{
-        @apply text-white;
+        @apply text-black;
         animation: showDescription 400ms linear;
     }
     .card:hover .icon{
-       @apply text-7xl text-azul-claro;
+       @apply text-7xl text-black;
         animation: showIcon 300ms linear;
     }
+     /* Componente Menu Lateral*/
     .lateral{
         @apply w-72 min-h-full float-right TrebuchetMS m-5; 
     }
     .lateral h3{
-        @apply block w-auto h-11 leading-loose text-3xl bebasneue  tracking-wide pl-3.5 mt-7 mb-3.5;
+        @apply block w-auto h-11 text-white leading-loose text-3xl bebasneue  tracking-wide pl-3.5 mt-7 mb-3.5 bg-naranja;
     }
     .texto{
         @apply w-10/12 h-7 border-none transition-all pl-1 rounded-sm;
     }
     .aside-box{
-        @apply  w-10/12 m-0 bg-white h-60 mt-5 pt-0.5; 
+        @apply  w-10/12 m-0 bg-transparent h-60 mt-5 pt-0.5; 
     }
+     /* Componente Busqueda*/
     .search{
         @apply w-11/12 h-8 bg-white mt-2.5 rounded-md border-solid;
     }
     .boton{
         @apply h-7 cursor-pointer text-base bg-transparent pl-1;
     }
+     /* Componente  Login*/
     .inputLogin{
         @apply block m-0 mt-5 w-4/5 h-7 border-solid border rounded-md pl-7; 
     }
@@ -207,48 +214,54 @@
     .loginBoton{
         @apply text-center text-white cursor-pointer TrebuchetMS transition-all text-sm rounded-none font-light w-24 h-8 mt-5 ml-4 mb-5;
     }
+     /* Componente Enlaces/Social*/
     .enlaces{
-        @apply block text-base no-underline ml-5 text-gray-500 hover:text-azul-oscuro hover:underline;
+        @apply block text-base no-underline ml-5 text-white hover:text-naranja hover:underline;
     }
     .social{
-        @apply h-44 text-3xl ml-5 mb-5 mt-5;
+        @apply h-44 text-3xl ml-5 mb-5 mt-5 text-naranja hover:text-white hover:scale-125 transform duration-100;
+    }
+    .sponsors h3{
+        @apply hover:bg-white hover:text-naranja 
     }
     .social a {
-        @apply block text-gray-600 font-bold absolute bg-white p-1.5 ml-16; 
+        @apply block text-naranja font-bold absolute bg-white p-1.5 ml-16; 
     }
-    .overlay {
-        @apply block  font-bold absolute bg-white p-1.5 ml-16 transition-all; 
+     /* Componente Estrenos*/
+    .estrenos{
+        @apply w-3/5 float-left TrebuchetMS m-5 ml-14; 
     }
-    .articles{
-        @apply float-left w-96 ;
+    .estrenos h3{
+        @apply block w-auto h-11 text-white leading-loose text-3xl bebasneue  tracking-wide pl-3.5 mt-7 mb-3.5 bg-naranja;
     }
-    .articleText{
-        @apply block w-full bebasneue text-center; 
+    .movieCard{
+       @apply w-full  flex flex-row p-3;
     }
-    
-    @keyframes backBanner {
-        0%{
-            background-position: 0px 0px;
-        }
-        100%{
-            background-position: -200px -200px;
-        }
+    .movieBackground{
+        @apply bg-white  shadow-lg overflow-hidden flex-1 flex flex-col
     }
+    .movieImage{
+        @apply bg-cover  h-96;
+    }
+    .movieTitle{
+        @apply p-4 flex-1 flex flex-col
+    }
+    .movieTitle h3 {
+        @apply mb-4 text-3xl;
+    }
+    .movieDescription{
+        @apply mb-4 text-gray-600 text-sm flex-1;
+    }
+    .sponsor{
+        @apply w-48 m-6;
+    }
+     /*Animaciopn mostrar texto*/
     @keyframes showText {
         0%{
             transform: translateX(-600%) scale(5,5);
             opacity: 1;
         }
-        50%{
-            transform: translateX(600%) scale(5,5);
-            opacity: 1;
-        }
-        75%{
-            transform: translateX(-600%) scale(5,5);
-            text-shadow: none;
-            color: transparent;
-            opacity: 0;
-        }
+     
         100%{
             transform: translateX(0%) scale(1, 1);
             text-shadow: 2px 2px 1px black;
@@ -265,15 +278,7 @@
         }
     }
 
-    @keyframes rotate-gear {
-        from {
-            transform: rotateZ(0deg);
-        }
-        to {
-            transform: rotateZ(360deg);
-        }
-    }
-
+ 
     @keyframes fromBellow {
         0% {
             transform: translateY(0%);
