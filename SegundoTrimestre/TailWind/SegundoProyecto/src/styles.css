@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @layer base {
+    /*Inicio de añadir Imagenes de fondo*/
     body {
         
         background-image: url('../img/fondo.jpg');
@@ -27,6 +28,8 @@
     .clifford{
         background-image: url('../img/cliffordjr.jpg'); 
     }
+    /*Final de añadir imagenes de fondo*/
+    /*CSS que no sabia como convertirlo a tailwind*/
     #myDiv {
       
         text-align: center;
@@ -54,7 +57,8 @@
         background: linear-gradient(to bottom, #D12D0F 0%, #D12D0F 100%);
         border: 1px solid #156785;
     }
-
+    /*Final CSS*/
+    /*Añadir los fonts Necesarios*/
     @font-face {
         font-family: "TrebuchetMS";
         src: url('../css/fonts/TrebuchetMS.ttf');
@@ -89,7 +93,8 @@
     .lista ul li a {
         @apply  block hover:text-white hover:scale-125 transform duration-100
     }
-    /* Componente Logo*/
+    /*Final componente lista*/
+    /* Inicio Componente Logo*/
     
     .logo{
         @apply block float-left text-3xl mt-2 ml-5 
@@ -106,7 +111,7 @@
     }
     
     .logo span {
-        /* logo gear */
+    
         @apply m-0 p-0
         block 
         float-left
@@ -132,7 +137,8 @@
     .logo:hover h3 {
         animation: fromRight 300ms linear;
     }
-    /* Componente Banner*/
+    /*Final componente logo*/
+    /*Inicio Componente Banner*/
     .banner{
         @apply  w-11/12 
         h-32
@@ -158,12 +164,15 @@
         
         animation: showText 3s linear;
     }
+    /*Final Componente Banner*/
+    /*Inicio Componente menu*/
     .menu ul li{
         @apply inline-block tracking-wide leading-loose mt-0 mr-5 mb-0 ml-5
     }
-    /* Componente Carta*/
+    /*Final componente menu*/
+    /* Inicio Componente Carta*/
    .card{
-       @apply float-left  transition-all w-52 h-80 bg-naranja overflow-hidden ml-14 mt-10 cursor-pointer text-center text-white hover:bg-white shadow-md 
+       @apply sm:w-1/6 md:w-52 float-left  transition-all w-52 h-80 bg-naranja overflow-hidden ml-14 mt-10 cursor-pointer text-center text-white hover:bg-white shadow-md 
    }
    .card .icon{
        @apply block transition-all text-white w-full h-32 text-5xl leading-10 text-center mt-10 m-0 WebSymbolsRegular;
@@ -184,7 +193,8 @@
        @apply text-7xl text-black;
         animation: showIcon 300ms linear;
     }
-     /* Componente Menu Lateral*/
+     /* Final Componente Carta*/
+     /* Inicio Componente Menu Lateral*/
     .lateral{
         @apply w-72 min-h-full float-right TrebuchetMS m-5; 
     }
@@ -197,14 +207,16 @@
     .aside-box{
         @apply  w-10/12 m-0 bg-transparent h-60 mt-5 pt-0.5; 
     }
-     /* Componente Busqueda*/
+     /* Final Componente Menu Lateral*/
+     /* Inicio Componente Busqueda*/
     .search{
         @apply w-11/12 h-8 bg-white mt-2.5 rounded-md border-solid;
     }
     .boton{
         @apply h-7 cursor-pointer text-base bg-transparent pl-1;
     }
-     /* Componente  Login*/
+    /* Final Componente Busqueda*/
+     /* Inicio Componente  Login*/
     .inputLogin{
         @apply block m-0 mt-5 w-4/5 h-7 border-solid border rounded-md pl-7; 
     }
@@ -214,7 +226,8 @@
     .loginBoton{
         @apply text-center text-white cursor-pointer TrebuchetMS transition-all text-sm rounded-none font-light w-24 h-8 mt-5 ml-4 mb-5;
     }
-     /* Componente Enlaces/Social*/
+     /* Final Componente  Login*/
+     /* Inicio Componente Enlaces/Social*/
     .enlaces{
         @apply block text-base no-underline ml-5 text-white hover:text-naranja hover:underline;
     }
@@ -227,7 +240,8 @@
     .social a {
         @apply block text-naranja font-bold absolute bg-white p-1.5 ml-16; 
     }
-     /* Componente Estrenos*/
+     /* Final Componente Enlaces/Social*/
+     /* Inicio Componente Estrenos*/
     .estrenos{
         @apply w-3/5 float-left TrebuchetMS m-5 ml-14; 
     }
@@ -255,7 +269,8 @@
     .sponsor{
         @apply w-48 m-6;
     }
-     /*Animaciopn mostrar texto*/
+    /* Final Componente Estrenos*/
+     /*Animacion mostrar texto*/
     @keyframes showText {
         0%{
             transform: translateX(-600%) scale(5,5);
@@ -269,6 +284,7 @@
             opacity: 1;
         }
     }
+    /*Animacion del boton de Cines*/
     @keyframes fromRight {
         from {
             transform: translateX(200%);
@@ -290,6 +306,7 @@
             transform: translateY(0%);
         }
     }
+    /*Inicio de animacion de cartas*/
     @keyframes showIcon{
         from{
             transform: translateY(-200%);
@@ -318,5 +335,5 @@
         color: white;
     }
 }
-
+/*Final de animacion de cartas*/
 }
